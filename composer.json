@@ -1,0 +1,26 @@
+{
+  "name": "JAW-Dev/advanced-custom-fields-auto-json-sync",
+  "description": "Automate JSON sync functionality for ACF.",
+  "keywords": ["WordPress", "plugin", "acf"],
+  "authors":[
+    {
+      "name": "Jason Witt",
+      "homepage": "https://jasonawitt.dev"
+    }
+  ],
+  "type": "wordpress-plugin",
+  "license": "GPL-2.0-only",
+  "support": {
+    "issues": "https://github.com/JAW-Dev/advanced-custom-fields-auto-json-sync/issues"
+  },
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://wpackagist.org"
+    }
+  ],
+  "require": {
+    "php": ">=7.4",
+    "composer/installers": "^1.2"
+  }
+}
