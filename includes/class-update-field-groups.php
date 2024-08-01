@@ -69,6 +69,9 @@ class ACF_AJS_Update_Field_Groups {
 		// Get the JSON dirs.
 		if ( function_exists( 'acf_get_setting' ) ) {
 			$json_dirs = acf_get_setting( 'load_json' );
+			if(is_string($json_dirs)) {
+				$json_dirs = [ $json_dirs ];
+			}
 		} else {
 			$json_dirs = array( trailingslashit( get_template_directory() ) . 'acf-json' );
 		}

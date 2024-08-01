@@ -36,7 +36,11 @@ class ACF_AJS_Directory_Structure {
 
 		// Get the JSON dirs.
 		if ( function_exists( 'acf_get_setting' ) ) {
-			$this->acf_json_dirs = acf_get_setting( 'load_json' );
+			$load_json = acf_get_setting( 'load_json' );
+			if(is_string($load_json)) {
+				$load_json = [ $load_json ];
+			}
+			$this->acf_json_dirs = $load_json;
 		} else {
 			$this->acf_json_dirs = array( trailingslashit( get_template_directory() ) . 'acf-json' );
 		}
