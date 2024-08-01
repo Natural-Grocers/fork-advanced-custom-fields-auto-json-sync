@@ -205,8 +205,7 @@ final class ACF_Auto_JSON_Sync {
 		}
 
 		// Check for Advanced custom fileds pro.
-		if ( ! is_plugin_active( 'advanced-custom-fields-pro/acf.php' ) ) {
-
+		if ( ! (is_plugin_active( 'advanced-custom-fields-pro/acf.php' ) || is_plugin_active('advanced-custom-fields/acf.php')) ) {
 			return false;
 		}
 
