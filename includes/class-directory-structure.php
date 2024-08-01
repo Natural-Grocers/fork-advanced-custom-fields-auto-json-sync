@@ -22,7 +22,7 @@ class ACF_AJS_Directory_Structure {
 	 *
 	 * @var string
 	 */
-	protected $acf_json_dir;
+	protected $acf_json_dirs;
 
 	/**
 	 * Constructor.
